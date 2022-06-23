@@ -12,12 +12,16 @@ const Assignment2 = () => {
   const [show, setShow] = useState(false)
   const onChange = (e) => {
     setBase(() => e.target.value)
+    setShow(false)
+
   }
   const onNumber = (e) => {
     setAmount(() => e.target.value)
+    setShow(false)
   }
   const onChange2 = (e) => {
     setCountry2(() => e.target.value)
+    setShow(false)
   }
   console.log(amount)
 
